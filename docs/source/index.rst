@@ -10,7 +10,7 @@ Welcome to Bioinformatics101's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+	syllabus
 
 Indices and tables
 ==================

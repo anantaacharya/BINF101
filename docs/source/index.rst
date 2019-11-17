@@ -14,7 +14,7 @@ Welcome to Bioinformatics101's documentation!
 
 Indices and tables
 ==================
-
+* :ref:`syllabus`
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`

@@ -10,11 +10,11 @@ Welcome to Bioinformatics101's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   syllabus
+	syllabus
 
 Indices and tables
 ==================
-
+* :ref:`syllabus`
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`

@@ -11,6 +11,7 @@ Introduction to Bioinformatics!
    :caption: Contents:
 
    syllabus
+   environment
 
 Indices and tables
 ==================

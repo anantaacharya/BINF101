@@ -11,11 +11,15 @@ Welcome Students:
 This course will focus on Bioinformatics section of BIO608. Your Instructors are
 
 Ananta Acharya
+
 Research Scientist, Corteva Agriscience
+
 ananta.acharya@gmail.com
 
 Ishwari  Kadaria
+
 Director, Center of Biotechnology, AFU
+
 ipkadariya@afu.edu.np
 
 Learning Goals:

@@ -11,6 +11,7 @@ Start Google cloud compute engine
 Connecting to Google Compute
 ============================
 Linux/Macbook: Terminal
+
 Windows: use putty 
 
 Putty: Please download putty from https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html. Make sure you have the right version. The host address, password and key file will be shared differently. 
@@ -39,9 +40,8 @@ Install Bioinformatics softwares
 ================================
 
 blast, bwa, samtools, vcftools, 
-
  
- ``conda install ``
+ ``conda install``
 
 activate conda for individiual users:
 =====================================

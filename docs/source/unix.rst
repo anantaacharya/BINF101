@@ -19,6 +19,7 @@ Log into a Unix machine remotely
 Login to cloud using putty:
 
 you should see after you login
+
 ``(base) bioinfo@afurampur:~$``
 
 know where you are
@@ -26,10 +27,12 @@ know where you are
 ``pwd``
 
 list files and directories
+
 ``ls``
 ``ls -l``
 
 go to students directory
+
 ``cd students``
 ``pwd``
 
@@ -41,42 +44,60 @@ create directory of you name
 ``mkdir <yourname>``
 
 go to your directory
+
 ``cd <yourname>``
+
 ``pwd``
 
 go one step up
+
 ``cd ..``
 
 go to home (/home/bioinfo)
+
+
 ``cd ~``
 
 Go back to your directory
+
 ``cd /students/<yourname>``
 
 Create a file
+
 ``echo "Hello People">myfirstfile.txt``
 
 Explore more
+
 ``mv
+
 cp
+
 rm
+
 rmdir
+
 cat``
 
 Download files from internet
 -------------------------------
 
 ``wget https://molb7621.github.io/workshop/_downloads/SP1.fq``
+
 ``curl https://molb7621.github.io/workshop/_downloads/sample.fa>test.sample1.fa``
 
 Use command line programs to inspect and manipulate files
 
 relavant commands:
 ``head
+
 tail
+
 wc
+
 wc -l
+
 grep
+
 uniq``
 
 

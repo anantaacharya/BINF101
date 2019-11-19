@@ -59,3 +59,6 @@ Homework, Assignment and Grading
 
    syllabus
    environment
+   unix
+   database
+   

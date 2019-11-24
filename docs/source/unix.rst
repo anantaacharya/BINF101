@@ -21,6 +21,12 @@ Login to cloud using putty:
 you should see after you login
 
 ``(base) bioinfo@afurampur:~$``
+if you dont see this, please type the following
+
+ ``. "/home/ananta/miniconda3/etc/profile.d/conda.sh"``
+ ``conda activate base``
+
+Now you are ready to begin. 
 
 know where you are
 

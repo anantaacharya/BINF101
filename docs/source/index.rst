@@ -58,7 +58,7 @@ Homework, Assignment and Grading
    :caption: Contents:
 
    syllabus
-   environment
+   connection
    unix
    database
    

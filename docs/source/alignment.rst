@@ -77,6 +77,7 @@ ref genome is
 mapping the paired end reads can be done by using the following command. Be sure to replace the texts within <> with approproiate names. 
 
 .. code-block:: console
+
 	#map
 	#bwa mem <ref.fa> <in.1.fq> <in.2.fq> > <in.sam>
 	bwa mem /mnt/disks/data/data/arabidopsis/ref/GCF_000001735.4_TAIR10.1_genomic.fasta ERR3407466.0.1.fq ERR3407466.0.2.fq > ERR3407466.0.sam
@@ -98,6 +99,7 @@ mapping the paired end reads can be done by using the following command. Be sure
 	
 	
 .. code-block:: console 
+
 	20066 + 0 in total (QC-passed reads + QC-failed reads)
 	0 + 0 secondary
 	66 + 0 supplementary

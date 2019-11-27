@@ -35,7 +35,7 @@ There are multiple programs to map short reads to reference genome. We will use 
 
 ``bwa``
 
-.. highlight:: none
+.. highlight:: console
 
 	Program: bwa (alignment via Burrows-Wheeler transformation)
 	Version: 0.7.17-r1188
@@ -75,6 +75,6 @@ ref genome is
 ``/mnt/disks/data/data/arabidopsis/ref/GCF_000001735.4_TAIR10.1_genomic.fasta``
 
 mapping the paired end reads can be done by using the following command. Be sure to replace the texts within <> with approproiate names. 
-..code-block:: none
+.. code-block:: none
 	bwa mem <ref.fa> <in.1.fq> <in.2.fq> > <in.sam>
  

@@ -76,6 +76,6 @@ ref genome is
 
 mapping the paired end reads can be done by using the following command. Be sure to replace the texts within <> with approproiate names. 
 
-.. code-block:: none
+.. code-block:: sh
 	bwa mem <ref.fa> <in.1.fq> <in.2.fq> > <in.sam>
  

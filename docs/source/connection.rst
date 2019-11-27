@@ -48,6 +48,7 @@ For file transfer:
 ==================
 Winscp: https://winscp.net/eng/index.php
 
+.. 
 Preparing the environment
 =========================
 
@@ -77,6 +78,7 @@ use this or add it on bashrc
 
 
  ``. "/home/ananta/miniconda3/etc/profile.d/conda.sh"``
+ 
  ``conda activate base``
  
 

@@ -61,7 +61,7 @@ Lab
  4. Alignments
  5. Variant calling
  6. Phylogenetic trees
- 7. Gene prediction II
+ 7. Gene prediction 
  8. Comparison and analysis of whole genomes 
  9. Prediction of protein structure and function 
 

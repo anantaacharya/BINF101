@@ -95,7 +95,7 @@ mapping the paired end reads can be done by using the following command. Be sure
 	
 	#get stats
 	
-	samtools flagstats ERR3407466.0.sorted.bam
+	samtools flagstat ERR3407466.0.sorted.bam
 	
 	
 .. code-block:: console 
@@ -115,5 +115,46 @@ mapping the paired end reads can be done by using the following command. Be sure
 	45 + 0 with mate mapped to a different chr (mapQ>=5)
 	
 	
+samtools idxstats for getting statistics on  mapping to indivdual chromosomes
 
- 
+.. code-block:: console
+	samtools idxstats ERR3407466.0.sorted.bam
+	
+	##output
+	##(output is from different file here, just for an example)	
+	NC_003070.9     30427671        839272  1088
+	NC_003071.7     19698289        712864  1010
+	NC_003074.8     23459830        941245  1178
+	NC_003075.7     18585056        608362  706
+	NC_003076.8     26975502        800847  990
+	NC_037304.1     367808  78101   80
+	NC_000932.1     154478  1057097 1075
+	*       0       0       66320
+
+
+Visualization. 
+After mapping, we visualize them using some softwares. IGV is a popular one. We can use the IGV within console and direct to X11 window. IGV also has web application.
+
+Variant Calling
+
+The alignments are then subject to variant calling. There are several open-source programs to call the variants. We will use samtools/bcftools to call variants. 
+
+.. code-block:: console
+	
+ bcftools mpileup -a "AD,DP" -f /mnt/disks/data/data/arabidopsis/ref/GCF_000001735.4_TAIR10.1_genomic.fasta \
+ ERR3407466.afurampur.4099.0.sam.bam..chr1.10000.sorted.bam \
+ ERR3407466.afurampur.4099.1.sam.bam.sorted.bam.chr1.10000.bam \
+ | bcftools call -mv -Ov -o test.vcf
+
+
+selected ouput
+
+.. code-block:: console
+
+	#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  ERR3407466.afurampur.4099.0     ERR3407466.afurampur.4099.1
+	NC_003070.9     2993    .       C       A       10.7169 .       DP=11;SGB=-0.516033;RPB=1;MQB=1;MQSB=0.974597;BQB=1;MQ0F=0;ICB=0.3;HOB=0.125;AC=1;AN=4;DP4=3,5,1,0;MQ=60        GT:PL:DP:AD     0/1:45,0,154:5:4,1      0/0:0,12,141:4:4,0
+	NC_003070.9     4261    .       C       A       17.8336 .       DP=6;SGB=-0.516033;RPB=1;MQB=1;MQSB=1;BQB=1;MQ0F=0;ICB=0.3;HOB=0.125;AC=1;AN=4;DP4=2,2,1,0;MQ=60        GT:PL:DP:AD     0/1:51,0,66:3:2,1       0/0:0,6,75:2:2,0
+	NC_003070.9     5124    .       C       A       3.75538 .       DP=7;SGB=-0.516033;RPB=1;MQB=1;MQSB=1.01283;BQB=1;MQ0F=0;ICB=0.3;HOB=0.125;AC=1;AN=4;DP4=3,3,0,1;MQ=60  GT:PL:DP:AD     0/0:0,15,174:5:5,0      0/1:35,0,35:2:1,1
+	NC_003070.9     6324    .       taaaa   tAaaaa  164     .       INDEL;IDV=6;IMF=1;DP=9;VDB=0.371445;SGB=-1.03866;MQSB=0.974597;MQ0F=0;AC=4;AN=4;DP4=0,0,5,4;MQ=60       GT:PL:DP:AD     1/1:71,9,0:3:0,3        1/1:120,18,0:6:0,6
+	NC_003070.9     6723    .       A       G       7.61464 .       DP=5;SGB=-0.516033;RPB=1;MQB=1;BQB=1;MQ0F=0;ICB=0.3;HOB=0.125;AC=1;AN=4;DP4=2,0,1,0;MQ=60       GT:PL:DP:AD     0/0:0,6,90:2:2,0        0/1:41,3,0:1:0,1
+	NC_003070.9     7398    .       G       T       5.01731 .       DP=14;SGB=-0.516033;RPB=1;MQB=1;MQSB=0.964642;BQB=1;MQ0F=0;ICB=0.3;HOB=0.125;AC=1;AN=4;DP4=6,4,1,0;MQ=60        GT:PL:DP:AD     0/0:0,12,104:4:4,0      0/1:39,0,174:7:6,1

@@ -60,6 +60,10 @@ Homework, Assignment and Grading
    syllabus
    connection
    unix
+   project1
    database
    alignment
+   msa
+   project2
+   
    

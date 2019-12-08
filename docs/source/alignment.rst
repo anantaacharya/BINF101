@@ -1,5 +1,5 @@
 #########################
-Sequence Alignment
+Mapping and Variant Calling
 #########################
 Preparing
 ----------

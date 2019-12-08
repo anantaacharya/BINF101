@@ -1,5 +1,5 @@
 #########################
-Sequence Alignment
+Sequence Alignment (Blast/Pairwise/MSA)
 #########################
 Blast with commandline
 -------------------------

@@ -20,6 +20,8 @@ Please write all the commands to perform folllowing activities and show relevant
 
 7. Get mapping statistics with flagstat, idxstats
 
-8. Run variant calling. 
+8. Each student divide the mapped files by chromosome (5 chromosome +2 chloroplast/mitochondria)
+
+8. Run variant calling on given chromosome
 
 9. How many variants were found?

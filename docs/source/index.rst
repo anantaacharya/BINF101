@@ -63,7 +63,10 @@ Homework, Assignment and Grading
    project1
    database
    alignment
+   variantFilter
    msa
    project2
+   tree
+   
    
    

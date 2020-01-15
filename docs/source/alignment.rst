@@ -133,9 +133,18 @@ samtools idxstats for getting statistics on  mapping to indivdual chromosomes
 
 
 Visualization. 
+-------------------
+
 After mapping, we visualize them using some softwares. IGV is a popular one. We can use the IGV within console and direct to X11 window. IGV also has web application.
 
+Get bam files for defined chromosome/region
+--------------------------------------------
+
+``samtools view -b ERR3407466.0.sorted.bam NC_003070.9>ERR3407466.0.chr1.sorted.bam``
+
+
 Variant Calling
+-----------------
 
 The alignments are then subject to variant calling. There are several open-source programs to call the variants. We will use samtools/bcftools to call variants. 
 

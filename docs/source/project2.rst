@@ -22,6 +22,6 @@ Please write all the commands to perform folllowing activities and show relevant
 
 8. Each student divide the mapped files by chromosome (5 chromosome +2 chloroplast/mitochondria)
 
-8. Run variant calling on given chromosome
+9. Run variant calling on given chromosome
 
-9. How many variants were found?
+10. How many variants were found?

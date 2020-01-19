@@ -141,7 +141,7 @@ Get bam files for defined chromosome/region
 --------------------------------------------
 
 ``samtools view -b ERR3407466.0.sorted.bam NC_003070.9>ERR3407466.0.chr1.sorted.bam``
-
+``samtools view -b ERR3407466.1.sorted.bam NC_003070.9>ERR3407466.1.chr1.sorted.bam``
 
 Variant Calling
 -----------------
@@ -151,16 +151,17 @@ The alignments are then subject to variant calling. There are several open-sourc
 .. code-block:: console
 	
  bcftools mpileup -a "AD,DP" -f /mnt/disks/data/data/arabidopsis/ref/GCF_000001735.4_TAIR10.1_genomic.fasta \
- ERR3407466.afurampur.4099.0.sam.bam..chr1.10000.sorted.bam \
- ERR3407466.afurampur.4099.1.sam.bam.sorted.bam.chr1.10000.bam \
+ ERR3407466.0.chr1.sorted.bam \
+ ERR3407466.1.chr1.sorted.bam \
  | bcftools call -mv -Ov -o test.vcf
 
 
 selected ouput
 
+``grep -v "^##" test.vcf | head``
 .. code-block:: console
 
-	#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  ERR3407466.afurampur.4099.0     ERR3407466.afurampur.4099.1
+	#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  ERR3407466.0.chr1.sorted.bam     ERR3407466.1.chr1.sorted.bam
 	NC_003070.9     2993    .       C       A       10.7169 .       DP=11;SGB=-0.516033;RPB=1;MQB=1;MQSB=0.974597;BQB=1;MQ0F=0;ICB=0.3;HOB=0.125;AC=1;AN=4;DP4=3,5,1,0;MQ=60        GT:PL:DP:AD     0/1:45,0,154:5:4,1      0/0:0,12,141:4:4,0
 	NC_003070.9     4261    .       C       A       17.8336 .       DP=6;SGB=-0.516033;RPB=1;MQB=1;MQSB=1;BQB=1;MQ0F=0;ICB=0.3;HOB=0.125;AC=1;AN=4;DP4=2,2,1,0;MQ=60        GT:PL:DP:AD     0/1:51,0,66:3:2,1       0/0:0,6,75:2:2,0
 	NC_003070.9     5124    .       C       A       3.75538 .       DP=7;SGB=-0.516033;RPB=1;MQB=1;MQSB=1.01283;BQB=1;MQ0F=0;ICB=0.3;HOB=0.125;AC=1;AN=4;DP4=3,3,0,1;MQ=60  GT:PL:DP:AD     0/0:0,15,174:5:5,0      0/1:35,0,35:2:1,1

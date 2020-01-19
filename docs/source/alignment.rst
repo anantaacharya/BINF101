@@ -159,6 +159,7 @@ The alignments are then subject to variant calling. There are several open-sourc
 selected ouput
 
 ``grep -v "^##" test.vcf | head``
+
 .. code-block:: console
 
 	#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  ERR3407466.0.chr1.sorted.bam     ERR3407466.1.chr1.sorted.bam

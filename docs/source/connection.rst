@@ -52,7 +52,9 @@ Winscp: https://winscp.net/eng/index.php
 Preparing the environment
 =========================
 
-suggest Conda environment for easy install
+**The following section is for information only, you do not need to do for this class. **
+
+I suggest Conda environment for easy install
 
 Install miniconda
 =================

@@ -12,9 +12,12 @@ Connecting to Google Compute
 ============================
 Linux/Macbook: Terminal
 
-Windows: use putty 
+Windows: use Putty or MobaXTerm
 
 Putty: Please download putty from https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html. Make sure you have the right version. The host address, password and key file will be shared differently. 
+
+MobaXterm (preferred): Please download and install from https://mobaxterm.mobatek.net/download-home-edition.html
+
 
 For file transfer:
 ==================
@@ -22,8 +25,9 @@ Winscp: https://winscp.net/eng/index.php
 
 Preparing the environment
 =========================
+**The following section is for information only, you do not need to do for this class. **
 
-suggest Conda environment for easy install
+I suggest Conda environment for easy install
 
 Install miniconda
 =================

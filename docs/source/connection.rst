@@ -12,10 +12,15 @@ Connecting to Google Compute
 ============================
 Linux/Macbook: Terminal
 
-Windows: use putty 
+Windows: use Putty or MobaXTerm
 
 Putty: Please download putty from https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html. Make sure you have the right version. The host address, password and key file will be shared differently. 
 
+MobaXterm (preferred): Please download and install from https://mobaxterm.mobatek.net/download-home-edition.html
+
+
+===========================
+**PUTTY**
 
 -Open PuTTY by launching putty.exe. A connection configuration window opens.
 
@@ -42,6 +47,21 @@ Putty: Please download putty from https://www.chiark.greenend.org.uk/~sgtatham/p
 -Now, you can always used that saved session to Load/double-click to connect.
 
 -After connecting, run commands on your instance using this terminal. When you have finished using the instance, disconnect from it by using the exit command.
+===========================
+**MobaXterm**
+
+-Open MobaXterm.
+
+-Click "Session" on top-left
+
+-Click "SSH". Enter 52.118.208.188 in Remote Host. Enter root in Specify username.
+
+-Click "Advanced SSH settings". 
+
+-Point to the file "afu2022.ppk" you got from me in email. 
+
+.. image:: mx_ssh.PNG
+
 
 
 For file transfer:

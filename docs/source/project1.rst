@@ -6,9 +6,18 @@ This project focusses on basics of unix/linux. If any concepts are not discussed
 
 Please write all the commands to perform folllowing activities and relevant 
 
-1. Go to students directory /mnt/disks/data/students
+Prework:
 
-2. Go to your directory
+use su - <youname> to login as yourself. 
+
+use pwd to see workd directory. 
+
+
+Project::
+
+1. Go to students directory /mnt/work/students/
+
+2. Go to your directory (if not already created, create it)
 
 3. Create a folder "project1"
 
@@ -18,14 +27,17 @@ Please write all the commands to perform folllowing activities and relevant
 
 6. create some files, rename, copy, remove files.
  
-7. Copy segments of files from the following file. 
+7. Copy files designated to you in google sheets from 
 
-	/mnt/disks/data/students/ananta/rice/ERR630181_2.fastq and ERR630181_1.fastq
-	
-	Each student should download 20000 reads for poth Read1 and Read2.; ie student 1 first 20K reads, student 2 2nd 20K reads ir, 20001 to 40000th reads and so on. 
+	/data/rice/raw/
+	please see file in google docs to see what you need to copy
+	ie, for "Ananta", test_1.fastq and test_2.fastq. 
 
 8. Count number of lines in the downloaded files. 	
 
 9. Count the number of sequences in those lines.
  
-10. search for pattern "ATGATG" in your downloaded files and count how many lines had those. 
+10. search for pattern "ATGATG" in your downloaded files and count how many lines had those and how many occurences 
+
+
+
